@@ -1,0 +1,137 @@
+
+#layout {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    grid-auto-rows: minmax(1em, auto);
+}
+
+img {
+    width: 100%;
+    border: solid black 2px;
+}
+
+header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-width: 50%;
+    margin: 0 0 0 0;
+    justify-self: center;
+}
+
+figure{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0 0 0 0;
+    justify-self: center;
+    max-width: 88%;
+}
+
+article {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0 0 0 0;
+    justify-self: stretch;
+    max-width: 100%;
+
+}
+
+figcaption{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    #layout {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        grid-auto-rows: minmax(1em, auto);
+    }
+
+    h1{
+        font-size: 2em;
+        justify-self: center;
+    }
+    header{
+        justify-self: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-device-width: 1000px) {
+
+    #layout {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        grid-auto-rows: minmax(1em, auto);
+    }
+
+    h1{
+        font-size: 2em;
+        justify-self: center;
+    }
+    header{
+        justify-self: center;
+        max-width: 100%;
+    }
+
+    article{
+
+    }
+    h2{
+        font-size: 1em;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-device-width: 600px) {
+
+    #layout {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        grid-auto-rows: minmax(1em, auto);
+    }
+
+    h1 {
+        font-size: 2em;
+        justify-self: center;
+    }
+
+    header {
+        justify-self: center;
+        max-width: 100%;
+    }
+
+    article {
+
+    }
+
+    h2 {
+        font-size: 1em;
+        justify-self: center;
+    }
+}
+
+
+
+
